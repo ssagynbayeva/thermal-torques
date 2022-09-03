@@ -1,11 +1,12 @@
 % Define document class
 \documentclass[twocolumn]{aastex631}
 \usepackage{showyourwork}
+\newcommand{\cntext}[1]{\begin{CJK}{UTF8}{bkai}#1\ignorespacesafterend\end{CJK}} % Typeset Chinese characters
 \usepackage{CJK}
 
 % Begin!
 \begin{document}
-
+\begin{CJK*}{UTF8}{gbsn}
 % Title
 \title{Global simulation of thermal torques}
 
@@ -136,5 +137,5 @@ Look at the Figure \ref{fig:den_smr3} to see how the disk looks like with these 
 \label{sec:conclusion}
 
 \bibliography{bib}
-
+\end{CJK*}
 \end{document}
